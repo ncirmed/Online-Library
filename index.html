@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome - Online Library</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="topbar-title">Online Library</div>
+        <div class="topbar-user">
+          <div id="username"></div>
+          <a class="logout" title="Logout" onclick="logout()">🚪</a>
+        </div>
+      </div>
+      <div class="searchbar">
+        <div>Search</div>
+        <input
+          class="search-input"
+          type="text"
+          id="search"
+          placeholder="by name..."
+        />
+        <button type="button" class="search-button" onclick="searchBook()">
+          🔎
+        </button>
+      </div>
+      <div class="table-container">
+        <table class="table">
+          <tr>
+            <th>Picture</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Price</th>
+          </tr>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script></script>
+  </body>
+</html>
